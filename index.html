@@ -121,8 +121,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Qris Payment min 400rb</h1>
-            <div>Minimal transaksi Rp. 400.000 dan Maksimal Rp. 749.000</div>
+            <h1>Qris Payment min 300rb</h1>
+            <div>Minimal transaksi Rp. 300.000 dan Maksimal Rp. 749.000</div>
         </div>
 
         <div class="info-box">
@@ -138,7 +138,7 @@
         <div class="best-seller">
             <h3>Best Seller:</h3>
             <div class="button-grid">
-                <button class="amount-button" onclick="setAmount(400000)">400.000</button>
+                <button class="amount-button" onclick="setAmount(300000)">300.000</button>
                 <button class="amount-button" onclick="setAmount(495000)">495.000</button>
                 <button class="amount-button" onclick="setAmount(600000)">600.000</button>
                 <button class="amount-button" onclick="setAmount(700000)">700.000</button>
@@ -157,7 +157,7 @@
     <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
     <script>
         const QRIS_CODES = {
-            
+        code1: "00020101021126610014COM.GO-JEK.WWW01189360091437099470750210G7099470750303UKE51440014ID.CO.QRIS.WWW0215ID10253898183090303UKE5204581253033605802ID5925bakar roti maryam 66, BAN6009PALEMBANG61053011162070703A0163048616",
             
         };
 
@@ -225,8 +225,8 @@
                 return;
             }
 
-            if (nominal < 400000 || nominal > 749000) {
-                alert('Nominal harus antara Rp. 400.000 dan Rp. 749.000');
+            if (nominal < 300000 || nominal > 749000) {
+                alert('Nominal harus antara Rp. 300.000 dan Rp. 749.000');
                 return;
             }
 
